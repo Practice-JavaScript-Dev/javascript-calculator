@@ -1,8 +1,12 @@
+/******************************
+GENERAL LAYOUT
+******************************/
 body {
     font-family: 'Open Sans', sans-seriff;
     background-color: black;
 }
 
+/* BACKGROUND IMAGE */
 #container {
     width: 1000px;
     height: 800px;
@@ -10,6 +14,7 @@ body {
     margin: 20px auto;
 }
 
+/* CALCULATOR */
 #calculator {
     width: 320px;
     height: 520px;
@@ -25,10 +30,12 @@ body {
 DISPLAY
 ******************************/
 
+/* ENTRY DIV */
 #result {
     height: 120px;
 }
 
+/* INPUT HISTORY */
 #history {
     text-align: right;
     height: 20px;
@@ -38,6 +45,7 @@ DISPLAY
     color: #919191;
 }
 
+/* CALCULATED TOTAL */
 #output {
     text-align: right;
     height: 60px;
@@ -49,10 +57,12 @@ DISPLAY
 KEYBOARD
 ******************************/
 
+/* BUTTON DIV */
 #keyboard {
     height: 400px;
 }
 
+/* ALIGN BUTTONS */
 .operator, .number, .empty {
     width: 50px;
     height: 50px;
@@ -62,13 +72,17 @@ KEYBOARD
     border-width: 0;
     font-weight: bold;
     font-size: 15px;
+    background-color: lightgrey;
 }
 
-/* Hide empty spaces */
-.number, .empty {
+/* EMPTY SPACES */
+#number, #empty {
     background-color: #eaedef;
 }
 
+/* HOVER EFFECTS */
 .number, .operator {
     cursor: pointer;
 }
+
+/*  */
