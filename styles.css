@@ -5,7 +5,6 @@ body {
     font-family: 'Open Sans', sans-seriff;
     background-color: black;
 }
-
 /* BACKGROUND IMAGE */
 #container {
     width: 1000px;
@@ -13,7 +12,6 @@ body {
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgImg.jpg);
     margin: 20px auto;
 }
-
 /* CALCULATOR */
 #calculator {
     width: 320px;
@@ -30,11 +28,10 @@ body {
 DISPLAY
 ******************************/
 
-/* ENTRY DIV */
+/* RESULT DISPLAY DIV */
 #result {
     height: 120px;
 }
-
 /* INPUT HISTORY */
 #history {
     text-align: right;
@@ -44,7 +41,6 @@ DISPLAY
     font-size: 15px;
     color: #919191;
 }
-
 /* CALCULATED TOTAL */
 #output {
     text-align: right;
@@ -61,7 +57,6 @@ KEYBOARD
 #keyboard {
     height: 400px;
 }
-
 /* ALIGN BUTTONS */
 .operator, .number, .empty {
     width: 50px;
@@ -72,17 +67,50 @@ KEYBOARD
     border-width: 0;
     font-weight: bold;
     font-size: 15px;
+    /* button background */
     background-color: lightgrey;
 }
-
-/* EMPTY SPACES */
-#number, #empty {
+/* CLEAR BACKGROUND COLOR */
+.number, .empty {
     background-color: #eaedef;
 }
-
-/* HOVER EFFECTS */
+/* CURSOR EFFECTS */
 .number, .operator {
     cursor: pointer;
 }
+.empty {
+    cursor: default;
+}
+/* PSEUDO CLASS' --> ON CLICK */
+.operator:active, .number:active {
+    font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
 
-/*  */
+/******************************
+KEBOARD COLORS (NTH CHILD)
+******************************/
+
+/* EVERY 4TH CHILD IN ROW */
+button:nth-child(4) {
+    font-size: 20px;
+    background-color: #20b2aa;
+}
+button:nth-child(8) {
+    font-size: 20px;
+    background-color: #ffa500;
+}
+button:nth-child(12) {
+    font-size: 20px;
+    background-color: #f08080;
+}
+button:nth-child(16) {
+    font-size: 20px;
+    background-color: #7d93e0;
+}
+button:nth-child(20) {
+    font-size: 20px;
+    background-color: #9477af;
+}
